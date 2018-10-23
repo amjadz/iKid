@@ -1,24 +1,160 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aGX-jx-dAY">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Dad Jokes-->
+        <scene sceneID="EhB-d1-LVm">
+            <objects>
+                <viewController id="eP1-P3-BI2" customClass="DadJokesViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="D7j-eo-yPq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What do you call a fake noodle?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gdY-1n-lZe">
+                                <rect key="frame" x="66.5" y="323" width="242" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.50117770110000004" green="0.50955397260000002" blue="0.52318789769999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SW6-S9-VnT">
+                                <rect key="frame" x="327" y="588" width="32" height="30"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="dadJokesButton:" destination="eP1-P3-BI2" eventType="touchUpInside" id="rXt-LK-Bv4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="gdY-1n-lZe" firstAttribute="centerX" secondItem="D7j-eo-yPq" secondAttribute="centerX" id="A6X-wj-u66"/>
+                            <constraint firstItem="RIg-dH-WKU" firstAttribute="trailing" secondItem="SW6-S9-VnT" secondAttribute="trailing" constant="16" id="TOI-Vd-icx"/>
+                            <constraint firstItem="gdY-1n-lZe" firstAttribute="centerY" secondItem="D7j-eo-yPq" secondAttribute="centerY" id="eLA-ZN-XHt"/>
+                            <constraint firstItem="RIg-dH-WKU" firstAttribute="bottom" secondItem="SW6-S9-VnT" secondAttribute="bottom" id="h5A-3F-o5r"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="RIg-dH-WKU"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Dad Jokes" selectedImage="Add_gray" id="N4x-5H-7zM"/>
+                    <connections>
+                        <outlet property="jokeLabel" destination="gdY-1n-lZe" id="quS-cn-aoC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lq1-Et-vql" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2495" y="705"/>
+        </scene>
+        <!--Funny jokes-->
+        <scene sceneID="Whg-v0-IuQ">
+            <objects>
+                <viewController id="qAy-mD-2Om" customClass="FunnyJokesViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="H6N-Yr-QBP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Why is Peter Pan always flying? " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sXJ-0b-q2y">
+                                <rect key="frame" x="65.5" y="323" width="244" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.50117770110000004" green="0.50955397260000002" blue="0.52318789769999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s5s-0Z-Nja">
+                                <rect key="frame" x="327" y="588" width="32" height="30"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="funnyJokesButton:" destination="qAy-mD-2Om" eventType="touchUpInside" id="71k-xS-oRk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="sXJ-0b-q2y" firstAttribute="centerX" secondItem="H6N-Yr-QBP" secondAttribute="centerX" id="aV4-Gl-Bdi"/>
+                            <constraint firstItem="sXJ-0b-q2y" firstAttribute="centerY" secondItem="H6N-Yr-QBP" secondAttribute="centerY" id="vcl-dL-t8R"/>
+                            <constraint firstItem="IfC-zN-T8E" firstAttribute="bottom" secondItem="s5s-0Z-Nja" secondAttribute="bottom" id="wIb-0L-ynt"/>
+                            <constraint firstItem="IfC-zN-T8E" firstAttribute="trailing" secondItem="s5s-0Z-Nja" secondAttribute="trailing" constant="16" id="yFi-YQ-8o6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="IfC-zN-T8E"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Funny jokes" selectedImage="Profile_white" id="7yC-nI-adZ"/>
+                    <connections>
+                        <outlet property="funnyJokesLabel" destination="sXJ-0b-q2y" id="kfj-a0-Xz4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nXP-jp-CGZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-652" y="705"/>
+        </scene>
+        <!--Custom View Controller-->
+        <scene sceneID="Pal-b3-duy">
+            <objects>
+                <tabBarController id="aGX-jx-dAY" customClass="CustomViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Zfc-3X-2Ej">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="qAy-mD-2Om" kind="relationship" relationship="viewControllers" id="nJB-Xr-5Zs"/>
+                        <segue destination="eP1-P3-BI2" kind="relationship" relationship="viewControllers" id="9Bw-8j-abc"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="BZi-yx-KHC"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EwI-YV-LN9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1618" y="-63"/>
+        </scene>
+        <!--Random Jokes-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <viewController id="BYZ-38-t0r" customClass="RandomJokesViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Why did the chicken cross the road" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FxA-9C-kjS">
+                                <rect key="frame" x="52.5" y="323" width="270" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.50117770110000004" green="0.50955397260000002" blue="0.52318789769999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lGH-nu-rVq">
+                                <rect key="frame" x="327" y="588" width="32" height="30"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="randomJokesButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s2e-Me-SjX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lGH-nu-rVq" secondAttribute="trailing" constant="16" id="A6N-P7-xFN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="lGH-nu-rVq" secondAttribute="bottom" id="B11-H4-vyR"/>
+                            <constraint firstItem="FxA-9C-kjS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="POL-6l-75E"/>
+                            <constraint firstItem="FxA-9C-kjS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ky4-7w-EY0"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Random Jokes" selectedImage="Alert_gray" id="3cq-9C-K3s"/>
+                    <connections>
+                        <outlet property="chickenJokeLabel" destination="FxA-9C-kjS" id="8vg-gt-6oo"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-1618" y="705"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Add_gray" width="20.5" height="20.5"/>
+        <image name="Alert_gray" width="17.5" height="19"/>
+        <image name="Profile_white" width="19" height="19"/>
+    </resources>
 </document>
