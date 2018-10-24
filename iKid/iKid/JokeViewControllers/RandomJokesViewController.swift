@@ -10,16 +10,16 @@ import UIKit
 
 class RandomJokesViewController: UIViewController {
 
-    
-    
-    @IBOutlet weak var chickenJokeLabel: UILabel!
-    
-
     @IBAction func randomJokesButton(_ sender: UIButton) {
         
-        
-        
-        
+            if let punchVC = storyboard?.instantiateViewController(withIdentifier: "PunchLine2") as? PunchLine2ViewController{
+                
+                UIView.transition(from: self.view,
+                                  to: punchVC.view,
+                                  duration: 2.0,
+                                  options: .transitionFlipFromLeft,
+                                  completion: nil)
+            }
     }
     
     override func viewDidLoad() {

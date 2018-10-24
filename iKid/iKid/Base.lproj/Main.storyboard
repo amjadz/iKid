@@ -9,20 +9,41 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Punch Line1 View Controller-->
+        <scene sceneID="CS4-nq-ACC">
+            <objects>
+                <viewController storyboardIdentifier="PunchLine" id="PoX-IZ-sQz" customClass="PunchLine1ViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="H5e-zI-sh6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="An Impasta" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Oy-fF-xnX">
+                                <rect key="frame" x="144.5" y="323" width="86" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="5Oy-fF-xnX" firstAttribute="centerX" secondItem="H5e-zI-sh6" secondAttribute="centerX" id="0RU-eQ-vRA"/>
+                            <constraint firstItem="5Oy-fF-xnX" firstAttribute="centerY" secondItem="H5e-zI-sh6" secondAttribute="centerY" id="b39-5F-HD1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Krt-Ml-2tZ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rpU-UP-3Gl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3346" y="705"/>
+        </scene>
         <!--Dad Jokes-->
         <scene sceneID="EhB-d1-LVm">
             <objects>
-                <viewController id="eP1-P3-BI2" customClass="DadJokesViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="JokeStuff" id="eP1-P3-BI2" customClass="DadJokesViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="D7j-eo-yPq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What do you call a fake noodle?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gdY-1n-lZe">
-                                <rect key="frame" x="66.5" y="323" width="242" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.50117770110000004" green="0.50955397260000002" blue="0.52318789769999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SW6-S9-VnT">
                                 <rect key="frame" x="327" y="588" width="32" height="30"/>
                                 <state key="normal" title="Next"/>
@@ -30,6 +51,12 @@
                                     <action selector="dadJokesButton:" destination="eP1-P3-BI2" eventType="touchUpInside" id="rXt-LK-Bv4"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What do you call a fake noodle?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gdY-1n-lZe">
+                                <rect key="frame" x="66.5" y="323" width="242" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.50117770110000004" green="0.50955397260000002" blue="0.52318789769999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -47,7 +74,34 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lq1-Et-vql" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2495" y="705"/>
+            <point key="canvasLocation" x="-2742" y="705"/>
+        </scene>
+        <!--Punch Line3 View Controller-->
+        <scene sceneID="zGM-07-DQN">
+            <objects>
+                <viewController storyboardIdentifier="PunchLine3" id="Zvd-qD-ES5" customClass="PunchLine3ViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="B8n-JA-68u">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="He neverlands" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Up-Dq-cJ4">
+                                <rect key="frame" x="132.5" y="323" width="110" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1Up-Dq-cJ4" firstAttribute="centerY" secondItem="B8n-JA-68u" secondAttribute="centerY" id="Vvh-Dd-9Oq"/>
+                            <constraint firstItem="1Up-Dq-cJ4" firstAttribute="centerX" secondItem="B8n-JA-68u" secondAttribute="centerX" id="ddy-gS-Pp6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wMG-Go-tTt"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xQE-ib-Cwc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-837.60000000000002" y="704.79760119940033"/>
         </scene>
         <!--Funny jokes-->
         <scene sceneID="Whg-v0-IuQ">
@@ -57,12 +111,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Why is Peter Pan always flying? " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sXJ-0b-q2y">
-                                <rect key="frame" x="65.5" y="323" width="244" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.50117770110000004" green="0.50955397260000002" blue="0.52318789769999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s5s-0Z-Nja">
                                 <rect key="frame" x="327" y="588" width="32" height="30"/>
                                 <state key="normal" title="Next"/>
@@ -70,6 +118,12 @@
                                     <action selector="funnyJokesButton:" destination="qAy-mD-2Om" eventType="touchUpInside" id="71k-xS-oRk"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Why is Peter Pan always flying? " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sXJ-0b-q2y">
+                                <rect key="frame" x="65" y="323" width="244" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.50117770110000004" green="0.50955397260000002" blue="0.52318789769999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -82,12 +136,12 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Funny jokes" selectedImage="Profile_white" id="7yC-nI-adZ"/>
                     <connections>
-                        <outlet property="funnyJokesLabel" destination="sXJ-0b-q2y" id="kfj-a0-Xz4"/>
+                        <outlet property="funnyJokesLabel" destination="sXJ-0b-q2y" id="hcp-kg-GsC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nXP-jp-CGZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-652" y="705"/>
+            <point key="canvasLocation" x="-265" y="705"/>
         </scene>
         <!--Custom View Controller-->
         <scene sceneID="Pal-b3-duy">
@@ -111,21 +165,14 @@
             </objects>
             <point key="canvasLocation" x="-1618" y="-63"/>
         </scene>
-        <!--Random Jokes-->
+        <!--Programmer Joke-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="RandomJokesViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Why did the chicken cross the road" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FxA-9C-kjS">
-                                <rect key="frame" x="52.5" y="323" width="270" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.50117770110000004" green="0.50955397260000002" blue="0.52318789769999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lGH-nu-rVq">
                                 <rect key="frame" x="327" y="588" width="32" height="30"/>
                                 <state key="normal" title="Next"/>
@@ -133,6 +180,12 @@
                                     <action selector="randomJokesButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s2e-Me-SjX"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Why do java programmers wear glasses?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FxA-9C-kjS">
+                                <rect key="frame" x="31.5" y="323" width="312" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.50117770110000004" green="0.50955397260000002" blue="0.52318789769999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -140,16 +193,43 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="lGH-nu-rVq" secondAttribute="bottom" id="B11-H4-vyR"/>
                             <constraint firstItem="FxA-9C-kjS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="POL-6l-75E"/>
                             <constraint firstItem="FxA-9C-kjS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ky4-7w-EY0"/>
+                            <constraint firstItem="FxA-9C-kjS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qVy-mX-Ahs"/>
+                            <constraint firstItem="FxA-9C-kjS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="siY-lK-lgR"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Random Jokes" selectedImage="Alert_gray" id="3cq-9C-K3s"/>
-                    <connections>
-                        <outlet property="chickenJokeLabel" destination="FxA-9C-kjS" id="8vg-gt-6oo"/>
-                    </connections>
+                    <tabBarItem key="tabBarItem" title="Programmer Joke" selectedImage="Alert_gray" id="3cq-9C-K3s"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1618" y="705"/>
+            <point key="canvasLocation" x="-1481" y="705"/>
+        </scene>
+        <!--Punch Line2 View Controller-->
+        <scene sceneID="hKU-5o-UJb">
+            <objects>
+                <viewController storyboardIdentifier="PunchLine2" id="V2G-qL-jN8" customClass="PunchLine2ViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kkd-Sc-kdO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="They can't c sharp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Qy-8w-Jxe">
+                                <rect key="frame" x="116.5" y="323" width="142" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="8Qy-8w-Jxe" firstAttribute="centerX" secondItem="kkd-Sc-kdO" secondAttribute="centerX" id="47T-Lw-Bxd"/>
+                            <constraint firstItem="8Qy-8w-Jxe" firstAttribute="centerY" secondItem="kkd-Sc-kdO" secondAttribute="centerY" id="Tu5-2O-1zr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="lln-BE-hjW"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CpF-QS-CR9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2118" y="705"/>
         </scene>
     </scenes>
     <resources>

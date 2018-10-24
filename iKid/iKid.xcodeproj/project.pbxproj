@@ -15,6 +15,10 @@
 		58854B90217EBFD9001F190E /* DadJokesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58854B8F217EBFD9001F190E /* DadJokesViewController.swift */; };
 		58854B92217EC1BE001F190E /* RandomJokesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58854B91217EC1BE001F190E /* RandomJokesViewController.swift */; };
 		58854B94217EC2E5001F190E /* FunnyJokesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58854B93217EC2E5001F190E /* FunnyJokesViewController.swift */; };
+		58854B9A21803BED001F190E /* CustomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58854B9921803BED001F190E /* CustomViewController.swift */; };
+		58854B9C21803CAB001F190E /* PunchLine1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58854B9B21803CAB001F190E /* PunchLine1ViewController.swift */; };
+		58854B9E21804365001F190E /* PunchLine2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58854B9D21804365001F190E /* PunchLine2ViewController.swift */; };
+		58854BA021805B0B001F190E /* PunchLine3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58854B9F21805B0B001F190E /* PunchLine3ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		58854B8F217EBFD9001F190E /* DadJokesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DadJokesViewController.swift; sourceTree = "<group>"; };
 		58854B91217EC1BE001F190E /* RandomJokesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomJokesViewController.swift; sourceTree = "<group>"; };
 		58854B93217EC2E5001F190E /* FunnyJokesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunnyJokesViewController.swift; sourceTree = "<group>"; };
+		58854B9921803BED001F190E /* CustomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewController.swift; sourceTree = "<group>"; };
+		58854B9B21803CAB001F190E /* PunchLine1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunchLine1ViewController.swift; sourceTree = "<group>"; };
+		58854B9D21804365001F190E /* PunchLine2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunchLine2ViewController.swift; sourceTree = "<group>"; };
+		58854B9F21805B0B001F190E /* PunchLine3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunchLine3ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,17 +68,37 @@
 		58854B76217E358A001F190E /* iKid */ = {
 			isa = PBXGroup;
 			children = (
+				58854B96218026EF001F190E /* PunchLineControllers */,
 				58854B77217E358A001F190E /* AppDelegate.swift */,
 				58854B79217E358A001F190E /* ViewController.swift */,
 				58854B7B217E358A001F190E /* Main.storyboard */,
 				58854B7E217E358A001F190E /* Assets.xcassets */,
 				58854B80217E358A001F190E /* LaunchScreen.storyboard */,
 				58854B83217E358A001F190E /* Info.plist */,
+				58854B9521802680001F190E /* JokeViewControllers */,
+				58854B9921803BED001F190E /* CustomViewController.swift */,
+			);
+			path = iKid;
+			sourceTree = "<group>";
+		};
+		58854B9521802680001F190E /* JokeViewControllers */ = {
+			isa = PBXGroup;
+			children = (
 				58854B8F217EBFD9001F190E /* DadJokesViewController.swift */,
 				58854B91217EC1BE001F190E /* RandomJokesViewController.swift */,
 				58854B93217EC2E5001F190E /* FunnyJokesViewController.swift */,
 			);
-			path = iKid;
+			path = JokeViewControllers;
+			sourceTree = "<group>";
+		};
+		58854B96218026EF001F190E /* PunchLineControllers */ = {
+			isa = PBXGroup;
+			children = (
+				58854B9B21803CAB001F190E /* PunchLine1ViewController.swift */,
+				58854B9D21804365001F190E /* PunchLine2ViewController.swift */,
+				58854B9F21805B0B001F190E /* PunchLine3ViewController.swift */,
+			);
+			path = PunchLineControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,9 +172,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58854BA021805B0B001F190E /* PunchLine3ViewController.swift in Sources */,
+				58854B9E21804365001F190E /* PunchLine2ViewController.swift in Sources */,
 				58854B90217EBFD9001F190E /* DadJokesViewController.swift in Sources */,
+				58854B9A21803BED001F190E /* CustomViewController.swift in Sources */,
 				58854B7A217E358A001F190E /* ViewController.swift in Sources */,
 				58854B92217EC1BE001F190E /* RandomJokesViewController.swift in Sources */,
+				58854B9C21803CAB001F190E /* PunchLine1ViewController.swift in Sources */,
 				58854B94217EC2E5001F190E /* FunnyJokesViewController.swift in Sources */,
 				58854B78217E358A001F190E /* AppDelegate.swift in Sources */,
 			);
